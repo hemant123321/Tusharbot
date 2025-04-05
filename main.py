@@ -122,11 +122,9 @@ keyboard = InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton("📞 Contact " ,url=f"https://t.me/ROWDYOFFICIALBOT") ],
                     [
-                    InlineKeyboardButton("🔔 Update channel " ,url="https://t.me/+SuHeln3S5glkZjFl") ],
-                    [
-                    InlineKeyboardButton("⚒️ Owner " ,url="https://t.me/ROWDYOFFICIALBOT")                              
+                    InlineKeyboardButton("🔔 Update channel " ,url="https://t.me/+7dyGkwBfH99iODU9") ],                              
                 ],           
-            ]
+
       )
     
 # Image URLs for the random image feature
@@ -166,7 +164,7 @@ async def start_command(bot: Client, message: Message):
         "➽ **/y2t - Create txt of yt playlist**\n\n"
         "➽ **/stop working process Command**\n\n"
         "➽ **/Rowdy Command Use To Download  Data From TXT File 🗃️** \n\n"
-        "**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/buddy_013)\n╰────────◆◇◆────────╯**\n\n"
+        "**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/ROWDYOFFICIALBOT)\n╰────────◆◇◆────────╯**\n\n"
     
       )
 
@@ -215,9 +213,9 @@ async def start_command(bot: Client, message: Message):
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTONS = InlineKeyboardMarkup([
-    [InlineKeyboardButton("📞 Contact ", url="https://t.me/buddy_013")],
+    [InlineKeyboardButton("📞 Contact ", url="https://t.me/ROWDYOFFICIALBOT")],
    
-    [InlineKeyboardButton("🥷 Owner ", url="https://t.me/buddy_013")],
+    [InlineKeyboardButton("🥷 Owner ", url="https://t.me/ROWDYOFFICIALBOT")],
 ])
 
 #=================== TELEGRAM ID INFORMATION =============
@@ -245,7 +243,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 async def id_command(client, message: Message):
     chat_id = message.chat.id
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("📞 Contact", url="https://t.me/buddy_013")]]
+        [[InlineKeyboardButton("📞 Contact", url="https://t.me/OWDYOFFICIALBOT")]]
     )
     await message.reply_text(
         f"**CHANNEL ID :** `/sudo add {chat_id}`",
@@ -635,7 +633,7 @@ async def help_command(client: Client, msg: Message):
     )
 
     buttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(" Buy Membership 🎉", url="https://t.me/buddy_013")]]
+        [[InlineKeyboardButton(" Buy Membership 🎉", url="https://t.me/ROWDYOFFICIALBOT")]]
     )
 
     await msg.reply_text(help_text, reply_markup=buttons)
@@ -1045,7 +1043,7 @@ async def upload(bot: Client, m: Message):
                            f'**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n'
                            f'<pre>**📓 Batch Name =** `{b_name}` ᏒᎾᏯᎠᎽ 🦁</pre>\n\n'
                            f'**⏳ Uploading Your videos may take some time**\n\n'
-                           f'**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/buddy_013)\n╰────────◆◇◆────────╯**\n\n')
+                           f'**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/ROWDYOFFICIALBOT)\n╰────────◆◇◆────────╯**\n\n')
                            
                            
                     

@@ -78,6 +78,21 @@ bot = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
 
+# Stop command handler
+@bot.on_message(filters.command("stop"))
+async def restart_handler(_, m: Message):
+    await m.reply_text("**𝗦𝘁𝗼𝗽𝗽𝗲𝗱**🚦", True)
+    os.execl(sys.executable, sys.executable, *sys.argv)
+
+@bot.on_message(filters.command("restart"))
+async def restart_handler(_, m):
+    if not is_authorized(m.from_user.id):
+        await m.reply_text("**🚫 You are not authorized to use this command.**")
+        return
+    await m.reply_text("🔮Restarted🔮", True)
+    os.execl(sys.executable, sys.executable, *sys.argv)
+
+
 # Sudo command to add/remove sudo users
 @bot.on_message(filters.command("sudo"))
 async def sudo_command(bot: Client, message: Message):
@@ -319,21 +334,6 @@ async def text_to_txt(client, message: Message):
 # Define paths for uploaded file and processed file
 UPLOAD_FOLDER = '/path/to/upload/folder'
 EDITED_FILE_PATH = '/path/to/save/edited_output.txt'
-
-# Stop command handler
-@bot.on_message(filters.command("stop"))
-async def restart_handler(_, m: Message):
-    await m.reply_text("**𝗦𝘁𝗼𝗽𝗽𝗲𝗱**🚦", True)
-    os.execl(sys.executable, sys.executable, *sys.argv)
-
-@bot.on_message(filters.command("restart"))
-async def restart_handler(_, m):
-    if not is_authorized(m.from_user.id):
-        await m.reply_text("**🚫 You are not authorized to use this command.**")
-        return
-    await m.reply_text("🔮Restarted🔮", True)
-    os.execl(sys.executable, sys.executable, *sys.argv)
-
 
 COOKIES_FILE_PATH = "youtube_cookies.txt"
 

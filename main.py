@@ -238,7 +238,7 @@ BUTTONS = InlineKeyboardMarkup([
 @bot.on_message(filters.private & filters.command("info"))
 async def info(bot: Client, update: Message):
     
-    text = f"""✨ Information ✨
+    text = f"""<blockquote> ✨ Information ✨</blockquote>
 
 **🙋🏻‍♂️ First Name :** {update.from_user.first_name}
 **🧖‍♂️ Your Second Name :** {update.from_user.last_name if update.from_user.last_name else 'None'}
@@ -613,7 +613,7 @@ async def help_command(client: Client, msg: Message):
 @bot.on_message(filters.command("plan"))
 async def help_command(client: Client, msg: Message):
     help_text = (
-        "<pre> 🎉 Welcome to DRM Bot! 🎉 </pre>\n\n"
+        "<blockquote>  🎉 Welcome to DRM Bot! 🎉 </blockquote>\n\n"
         "You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including:\n\n"
         "• </blockquote>📚 Appx Zip+Encrypted Url</blockquote>\n"
         "• 🎓 Classplus DRM+ NDRM\n"
@@ -703,7 +703,7 @@ async def upload(bot: Client, m: Message):
         name_message = await bot.send_message(
             m.chat.id,
         
-            f"""<pre>**📗 {fancy_batch_name}**</pre>"""
+            f"""<blockquote> **📗 {fancy_batch_name}**</blockquote>"""
             
         )
         await bot.pin_chat_message(m.chat.id, name_message.id)
@@ -761,7 +761,7 @@ async def upload(bot: Client, m: Message):
     else:
         CR = credit
    
-    await editable.edit("**Enter Pw Token For Pw Uploading** \**notherwise send anything**")
+    await editable.edit("**Enter Pw Token For Pw Uploading notherwise send anything**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
@@ -881,8 +881,7 @@ async def upload(bot: Client, m: Message):
                       f"🎥VIDEO ID: [{str(count).zfill(3)}]({link0})\n"
                       f"╰━━━━━━━━━━━╯\n\n"
                       f"📄 **Title** : `{name1}`\n\n"
-                      f"📗 **Batch Name** : `{b_name}`\n\n"
-                      f"🎬 **Resolution** : {res}\n\n"
+                      f"<blockquote> 📗 **Batch Name** : `{b_name}`</blockquote>\n\n"
                       f"📥 **Extracted By** : {CR}\n\n"
                 )                
                 cc1 = (             
@@ -890,8 +889,7 @@ async def upload(bot: Client, m: Message):
                      f"📁FILE ID: [{str(count).zfill(3)}]({link0})\n"
                      f"╰━━━━━━━━━━━╯\n\n"
                      f"📄 **Title** : `{name1}`.pdf\n\n"
-                     f"📗 **Batch Name** : `{b_name}`\n\n"
-                     f"🎬 **Resolution** : {res}\n\n"
+                     f"<blockquote> 📗 **Batch Name** : `{b_name}</blockquote>`\n\n"
                      f"📥 **Extracted By** : {CR}\n\n" 
                 )
      
@@ -1036,12 +1034,12 @@ async def upload(bot: Client, m: Message):
                 else:
                     progress = (count / len(links)) * 100
                     remaining_links = len(links) - count
-                    Show =(  f'<pre>🚀 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 🚀 {progress:.2f}%</pre>\n\n'
+                    Show =(  f'<blockquote> 🚀 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 🚀 {progress:.2f}%</blockquote>\n\n'
                            f'**┠📊 Total Links = {len(links)}\n**'
                            f'**┠⚡ Currently on = {str(count)}\n**'
                            f'**┠⏳ Remaining links = {remaining_links}\n\n**'
                            f'**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n'
-                           f'<pre>**📓 Batch Name =** `{b_name}` ᏒᎾᏯᎠᎽ 🦁</pre>\n\n'
+                           f'<pre>**<blockquote> 📗 Batch Name =** `{b_name}` ᏒᎾᏯᎠᎽ 🦁</blockquote>\n\n'
                            f'**⏳ Uploading Your videos may take some time**\n\n'
                            f'**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/ROWDYOFFICIALBOT)\n╰────────◆◇◆────────╯**\n\n')
                            
@@ -1076,7 +1074,7 @@ async def upload(bot: Client, m: Message):
     await m.reply_text(f"`🌟 𝗕𝗔𝗧𝗖𝗛 𝗦𝗨𝗠𝗠𝗔𝗥𝗬 🌟\n\n"
                        f"━━━━━━━━━━━━━━━━━━━━━━━\n"
                        f"🔢 𝗜𝗻𝗱𝗲𝘅 𝗥𝗮𝗻𝗴𝗲 : ({raw_text} to {len(links)})\n\n"
-                       f"<pre>📗 𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : {b_name}</pre>\n\n"
+                       f"<blockquote> 📗 𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : {b_name}</blockquote>\n\n"
                        f"━━━━━━━━━━━━━━━━━━━━━━━\n"
                        f"✅ STATUS: DOWNLOAD COMPLETED")
                     

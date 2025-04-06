@@ -878,7 +878,7 @@ async def upload(bot: Client, m: Message):
                 BUTTONSZIP = InlineKeyboardMarkup([[InlineKeyboardButton(text="🎥 Stream Video ", url=f"{urlzip}")]])        
                 cc = (
                       f"╭━━━━━━━━━━━╮\n"
-                      f"🎥VIDEO ID: {str(count).zfill(3)}.\n"
+                      f"🎥VIDEO ID: [{str(count).zfill(3)}]({link0})\n"
                       f"╰━━━━━━━━━━━╯\n\n"
                       f"📄 **Title** : `{name1}`\n\n"
                       f"📗 **Batch Name** : `{b_name}`\n\n"
@@ -887,7 +887,7 @@ async def upload(bot: Client, m: Message):
                 )                
                 cc1 = (             
                      f"╭━━━━━━━━━━━╮\n"
-                     f"📁FILE ID: {str(count).zfill(3)}.\n"
+                     f"📁FILE ID: [{str(count).zfill(3)}]({link0})\n"
                      f"╰━━━━━━━━━━━╯\n\n"
                      f"📄 **Title** : `{name1}`.pdf\n\n"
                      f"📗 **Batch Name** : `{b_name}`\n\n"
@@ -967,7 +967,7 @@ async def upload(bot: Client, m: Message):
                         
                 elif "zip" in url:
                     try:
-                        await bot.send_photo(chat_id=m.chat.id, photo=zipimg, caption=cczip)
+                        await bot.send_photo(chat_id=m.chat.id, photo=zipimg, caption=cc)
                         count +=1
                     except Exception as e:
                         await m.reply_text(str(e))    
@@ -985,7 +985,7 @@ async def upload(bot: Client, m: Message):
 
                 elif "media-cdn.classplusapp.com/drm/" in url:
                     try:
-                        await bot.send_photo(chat_id=m.chat.id, photo=cpimg, caption=cpvod)
+                        await bot.send_photo(chat_id=m.chat.id, photo=cpimg, caption=cc)
                         count +=1
                     except Exception as e:
                         await m.reply_text(str(e))    
@@ -997,7 +997,7 @@ async def upload(bot: Client, m: Message):
                         cmd = f'yt-dlp -o "{name}.jpg" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        copy = await bot.send_photo(chat_id=m.chat.id, document=f'{name}.jpg', caption=cimg)
+                        copy = await bot.send_photo(chat_id=m.chat.id, document=f'{name}.jpg', caption=cc1) 
                         count += 1
                         os.remove(f'{name}.jpg')
                     except FloodWait as e:
@@ -1025,7 +1025,7 @@ async def upload(bot: Client, m: Message):
                         cmd = f'yt-dlp -o "{name}.pdf" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        copy = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cczip1)
+                        copy = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cc1)
                         count += 1
                         os.remove(f'{name}.pdf')
                     except FloodWait as e:

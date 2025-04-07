@@ -46,10 +46,10 @@ cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"
 zipimg = "https://i.postimg.cc/C5T2SN20/photo-2025-04-02-18-19-12.jpg"
 
 credit =("ROWDY") 
-OWNER = int(os.environ.get("OWNER",7003164707))
+OWNER = int(os.environ.get("OWNER",6326227068))
 try: 
-    ADMINS=[7003164707] 
-    for x in (os.environ.get("ADMINS", "7003164707").split()):  
+    ADMINS=[6326227068] 
+    for x in (os.environ.get("ADMINS", "6326227068").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
@@ -61,12 +61,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 7003164707 # Replace with the actual owner's user ID
+OWNER_ID = 6326227068 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [7003164707]
+SUDO_USERS = [6326227068]
 
-AUTH_CHANNEL = -1002569058515
+AUTH_CHANNEL = -1002619524750
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:

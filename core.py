@@ -316,7 +316,7 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     emoji = get_next_emoji()
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:12 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"**📤 🅤︎Ⓟ︎🅛︎Ⓞ︎🅐︎Ⓓ︎🅘︎Ⓝ︎🅖︎....**\n\n **📃 Title =`{name}`**\n\n**╰──────⌈🌟 ᏒᎾᏯᎠᎽ 🌟⌋──────╯**")
+    reply = await m.reply_text(f"**📤 🅤︎Ⓟ︎🅛︎Ⓞ︎🅐︎Ⓓ︎🅘︎Ⓝ︎🅖︎....**\n\n **📃 Title =`{name}`**\n\n**╰──────⌈🌟 🅧︎Ⓨ︎🅩...🦁 🌟⌋──────╯**")
     try:
         if thumb == "no":
             thumbnail = f"{filename}.jpg"

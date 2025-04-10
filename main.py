@@ -878,7 +878,7 @@ async def upload(bot: Client, m: Message):
                 BUTTONSZIP = InlineKeyboardMarkup([[InlineKeyboardButton(text="🎥 Stream Video ", url=f"{urlzip}")]])        
                 cc = (
                       f"**╭━━━━━━━━━━━╮**\n"
-                      f"**[🎥Vɪᴅᴇ🅾︎ ID: {str(count).zfill(3)}]**({link0})\n"
+                      f"**[🎥Vɪᴅᴇ🅾︎ ID: {str(count).zfill(3)}]({link0})**\n"
                       f"**╰━━━━━━━━━━━╯**\n\n"
                       f"**📦 🅣︎ɪᴛʟⒺ︎ = `{name1}`**\n\n"
                       f"<blockquote>**🎓 🅑︎ᴀᴛᴄH 🅝︎ᴀⓂ︎Ⓔ︎ =** `{b_name}`</blockquote>\n\n"
@@ -889,7 +889,7 @@ async def upload(bot: Client, m: Message):
                 )                
                 cc1 = (             
                       f"**╭━━━━━━━━━━━╮**\n"
-                      f"**[🎥Fɪʟ🅴︎ ID: {str(count).zfill(3)}]**({link0})\n"
+                      f"**[🎥Fɪʟ🅴︎ ID: {str(count).zfill(3)}]({link0})**\n"
                       f"**╰━━━━━━━━━━━╯**\n\n"
                       f"**📦 🅣︎ɪᴛʟⒺ︎ = `{name1}`**\n\n"
                       f"<blockquote>**🎓 🅑︎ᴀᴛᴄH 🅝︎ᴀⓂ︎Ⓔ︎ =** `{b_name}`</blockquote>\n\n"

@@ -45,7 +45,7 @@ pwimg = "https://graph.org/file/8add8d382169e326f67e0-3bf38f92e52955e977.jpg"
 cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"
 zipimg = "https://i.postimg.cc/C5T2SN20/photo-2025-04-02-18-19-12.jpg"
 
-credit =("ROWDY") 
+credit =("🅧︎Ⓨ︎🅩.... ") 
 OWNER = int(os.environ.get("OWNER",6326227068))
 try: 
     ADMINS=[6326227068] 
@@ -135,9 +135,9 @@ import random
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📞 Contact " ,url=f"https://t.me/ROWDYOFFICIALBOT") ],
+                    InlineKeyboardButton("📞 Contact " ,url=f"https://t.me/XYZOFFICALBOT") ],
                     [
-                    InlineKeyboardButton("🔔 Update channel " ,url="https://t.me/+7dyGkwBfH99iODU9") ],                              
+                    InlineKeyboardButton("🔔 Update channel " ,url="https://t.me/XYZOFFICALBOT") ],                              
                 ],           
 
       )
@@ -179,7 +179,7 @@ async def start_command(bot: Client, message: Message):
         "➽ **/y2t - Create txt of yt playlist**\n\n"
         "➽ **/stop working process Command**\n\n"
         "➽ **/Rowdy Command Use To Download  Data From TXT File 🗃️** \n\n"
-        "**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/ROWDYOFFICIALBOT)\n╰────────◆◇◆────────╯**\n\n"
+        "**╭────────◆◇◆────────╮\n⚡ MADE BY : [...🅧︎Ⓨ︎🅩... 🦁](t.me/XYZOFFICALBOT)\n╰────────◆◇◆────────╯**\n\n"
     
       )
 
@@ -228,9 +228,9 @@ async def start_command(bot: Client, message: Message):
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BUTTONS = InlineKeyboardMarkup([
-    [InlineKeyboardButton("📞 Contact ", url="https://t.me/ROWDYOFFICIALBOT")],
+    [InlineKeyboardButton("📞 Contact ", url="https://t.me/XYZOFFICALBOT")],
    
-    [InlineKeyboardButton("🥷 Owner ", url="https://t.me/ROWDYOFFICIALBOT")],
+    [InlineKeyboardButton("🥷 Owner ", url="https://t.me/XYZOFFICALBOT")],
 ])
 
 #=================== TELEGRAM ID INFORMATION =============
@@ -258,7 +258,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 async def id_command(client, message: Message):
     chat_id = message.chat.id
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("📞 Contact", url="https://t.me/OWDYOFFICIALBOT")]]
+        [[InlineKeyboardButton("📞 Contact", url="https://t.me/XYZOFFICALBOT")]]
     )
     await message.reply_text(
         f"**CHANNEL ID :** `/sudo add {chat_id}`",
@@ -485,7 +485,7 @@ async def edit_txt(client, message: Message):
     try:
         await message.reply_document(
             document=final_file_path,
-            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ 🌟 ᏒᎾᏯᎠᎽ 🌟**"
+            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ 🌟 🅧︎Ⓨ︎🅩.... 🌟**"
         )
     except Exception as e:
         await message.reply_text(f"🚨 **Error**: Unable to send the file.\n\nDetails: {e}")
@@ -575,7 +575,7 @@ async def ytplaylist_to_txt(client: Client, message: Message):
         file_name = save_to_file(videos, title)
         await message.reply_document(
             document=file_name, 
-            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ 🌟 ᏒᎾᏯᎠᎽ 🌟"
+            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ 🌟 🅧︎Ⓨ︎🅩.... 🌟"
         )
         os.remove(file_name)
     else:
@@ -633,7 +633,7 @@ async def help_command(client: Client, msg: Message):
     )
 
     buttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(" Buy Membership 🎉", url="https://t.me/ROWDYOFFICIALBOT")]]
+        [[InlineKeyboardButton(" Buy Membership 🎉", url="https://t.me/XYZOFFICALBOT")]]
     )
 
     await msg.reply_text(help_text, reply_markup=buttons)
@@ -641,7 +641,7 @@ async def help_command(client: Client, msg: Message):
 
 
 # Upload command handler
-@bot.on_message(filters.command(["Rowdy"]))
+@bot.on_message(filters.command(["Txt"]))
 async def upload(bot: Client, m: Message):
     if not is_authorized(m.chat.id):
         await m.reply_text("**🚫You are not authorized to use this bot.**")
@@ -748,14 +748,14 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name `no` Otherwise send `d`**")
+    await editable.edit("**Enter Your Coaching Name `no` Otherwise send `d`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️ᏒᎾᏯᎠᎽ"
+    credit = "️🅧︎Ⓨ︎🅩...."
     if raw_text3 == 'd':
-        CR = 'ᏒᎾᏯᎠᎽ'
+        CR = '🅧︎Ⓨ︎🅩....'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -877,20 +877,26 @@ async def upload(bot: Client, m: Message):
                 
                 BUTTONSZIP = InlineKeyboardMarkup([[InlineKeyboardButton(text="🎥 Stream Video ", url=f"{urlzip}")]])        
                 cc = (
-                      f"╭━━━━━━━━━━━╮\n"
-                      f"🎥VIDEO ID: [{str(count).zfill(3)}]({link0})\n"
-                      f"╰━━━━━━━━━━━╯\n\n"
-                      f"📄 **Title** : `{name1}`\n\n"
-                      f"<blockquote> 📗 **Batch Name** : `{b_name}`</blockquote>\n\n"
-                      f"📥 **Extracted By** : {CR}\n\n"
+                      f"**╭━━━━━━━━━━━╮**\n"
+                      f"[🎥**Vɪᴅᴇ🅾︎ ID:** {str(count).zfill(3)}]({link0})\n"
+                      f"**╰━━━━━━━━━━━╯**\n\n"
+                      f"📄 **📦 🅣︎ɪᴛʟⒺ︎ =** `{name1}`\n\n"
+                      f"<blockquote> 📗 **🎓 🅑︎ᴀᴛᴄH 🅝︎ᴀⓂ︎Ⓔ︎ =** `{b_name}`</blockquote>\n\n"
+                      f"**🏫 🅒︎ᴏᴀᴄʜɪⓃ︎G 🅝︎ᴀⓂ︎Ⓔ︎ =** {CR}\n\n"
+                      f"**╭━━━━━━━━━◆✯◆━━━━━━━━━╮**\n\n"
+                      f"**☠️ Exᴛʀ🅰︎ᴄᴛⒺ︎D 🅱︎Y =** **🤖 🅑︎Ⓞ︎🅣︎...☠️**\n\n"
+                      f"**╰━━━━━━━━━◇✯◇━━━━━━━━━╯**\n\n"
                 )                
                 cc1 = (             
-                     f"╭━━━━━━━━━━━╮\n"
-                     f"📁FILE ID: [{str(count).zfill(3)}]({link0})\n"
-                     f"╰━━━━━━━━━━━╯\n\n"
-                     f"📄 **Title** : `{name1}`.pdf\n\n"
-                     f"<blockquote> 📗 **Batch Name** : `{b_name}</blockquote>`\n\n"
-                     f"📥 **Extracted By** : {CR}\n\n" 
+                      f"**╭━━━━━━━━━━━╮**\n"
+                      f"[🎥**Fɪʟ🅴︎ ID:** {str(count).zfill(3)}]({link0})\n"
+                      f"**╰━━━━━━━━━━━╯**\n\n"
+                      f"📄 **📦 🅣︎ɪᴛʟⒺ︎ =** `{name1}`\n\n"
+                      f"<blockquote> 📗 **🎓 🅑︎ᴀᴛᴄH 🅝︎ᴀⓂ︎Ⓔ︎ =** `{b_name}`</blockquote>\n\n"
+                      f"**🏫 🅒︎ᴏᴀᴄʜɪⓃ︎G 🅝︎ᴀⓂ︎Ⓔ︎ =** {CR}\n\n"
+                      f"**╭━━━━━━━━━◆✯◆━━━━━━━━━╮**\n\n"
+                      f"**☠️ Exᴛʀ🅰︎ᴄᴛⒺ︎D 🅱︎Y =** **🤖 🅑︎Ⓞ︎🅣︎...☠️**\n\n"
+                      f"**╰━━━━━━━━━◇✯◇━━━━━━━━━╯**\n\n" 
                 )
      
                 if "drive" in url:
@@ -1034,14 +1040,14 @@ async def upload(bot: Client, m: Message):
                 else:
                     progress = (count / len(links)) * 100
                     remaining_links = len(links) - count
-                    Show =(  f'<blockquote> 🚀 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 🚀 {progress:.2f}%</blockquote>\n\n'
-                           f'**┠📊 Total Links = {len(links)}\n**'
-                           f'**┠⚡ Currently on = {str(count)}\n**'
-                           f'**┠⏳ Remaining links = {remaining_links}\n\n**'
-                           f'**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n'
-                           f'<pre>**<blockquote> 📗 Batch Name =** `{b_name}` ᏒᎾᏯᎠᎽ 🦁</blockquote>\n\n'
-                           f'**⏳ Uploading Your videos may take some time**\n\n'
-                           f'**╭────────◆◇◆────────╮\n⚡ MADE BY : [ᏒᎾᏯᎠᎽ 🦁](t.me/ROWDYOFFICIALBOT)\n╰────────◆◇◆────────╯**\n\n')
+                    Show =(  f'<blockquote> 🚀 🅿︎🆁︎🅾︎🅶︎🆁︎🅴︎🆂︎🆂︎ 🚀 {progress:.2f}%</blockquote>\n\n'
+                           f'**┠📊 Tᴏᴛᴀʟ Lɪɴᴋs =** **{len(links)}**\n'
+                           f'**┠⚡ Cᴜʀʀᴇɴᴛʟʏ Oɴ =** **{str(count)}**\n'
+                           f'**┠⏳ RᴇⓂ︎ᴀɪɴɪɴɢ Lɪɴᴋs =** **{remaining_links}**\n\n'
+                           f'**📤 🅓︎Ⓞ︎🅦︎Ⓝ︎🅛︎Ⓞ︎🅐︎Ⓓ︎🅘︎Ⓝ︎🅖︎! 📤**\n\n'
+                           f'<blockquote> **🎓 🅑︎ᴀᴛᴄH 🅝︎ᴀⓂ︎E =** **`{b_name}`**</blockquote>\n\n'
+                           f'**⏳ 𝕌ᴘʟᴏᴀᴅɪɴɢ 𝕐ᴏᴜʀ 𝕍ɪᴅᴇᴏ𝕤 Ⓜ︎ᴀʏ 𝕋ᴀᴋᴇ 𝕊ᴏⓂ︎ᴇ 𝕋ɪⓂ︎ᴇ ⏳**\n\n'
+                           f'**╭────────◆✯◆────────╮\n☠️ Ⓜ︎🅰︎🅓︎Ⓔ︎ 🅱︎Ⓨ︎ : [...🅧︎Ⓨ︎🅩.... 🦁](t.me/XYZOFFICALBOT)\n╰────────◇✯◇────────╯**\n\n')
                            
                            
                     

@@ -88,10 +88,10 @@ async def progress_bar(current, total, reply, start):
             bar_length = 11
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
-            progress_bar = "▰" * completed_length + "▱" * remaining_length
+            progress_bar = "▬" * completed_length + "▭" * remaining_length
             
             try:
-                await reply.edit(f'`╭──────💥 UPLOADING 💥─────╮ \n├ {progress_bar}\n├ 𝗦𝗽𝗲𝗲𝗱 ⚡ ➠ {sp} \n├ 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝘀 🧭 ➠ {perc} \n├ 𝗟𝗼𝗮𝗱𝗲𝗱 🗂️ ➠ {cur}\n├ 𝗦𝗶𝘇𝗲 🧲 ➠  {tot} \n├ 𝗘𝗧𝗔 ⏳ ➠ {eta} \n╰✯━━━━━🌟 ᏒᎾᏯᎠᎽ 🌟━━━━━✯╯`\n') 
+                await reply.edit(f'`╭━━━━━💥 UᴘʟᴏᴀᴅɪɴG 💥━━━━━╮ \n├ {progress_bar}\n├ SᴘᴇᴇD ⚡ ➠ {sp} \n├ PʀᴏɢʀᴇsS 🧭 ➠ {perc} \n├ LᴏᴀᴅᴇD 🗂️ ➠ {cur}\n├ SɪᴢE 🧲 ➠  {tot} \n├ EᴛA ⏳ ➠ {eta} \n╰━━━━━━✯ 🅧︎Ⓨ︎🅩... ✯━━━━━━╯`\n') 
             except FloodWait as e:
                 time.sleep(e.x)
                 #await reply.edit(f'`\n ╭──⌯════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬═════⌯──╮ \n├⚡ {progress_bar} |﹝{perc}﹞ \n├🚀 Speed ➤ {sp} \n├📟 Processed ➤ {cur}\n├🧲 Size - ETA ➤ {tot} - {eta} \n╰─═══✩🌟𝐑𝐎𝐖𝐃𝐘🌟✩═══─╯`\n') 

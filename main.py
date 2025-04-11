@@ -145,14 +145,37 @@ keyboard = InlineKeyboardMarkup(
 # Image URLs for the random image feature
 image_urls = [
     
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
-    "https://graph.org/file/043746948ffaa41e2880d-e4039e74b6834b0e5c.jpg",
+    "https://i.ibb.co/Xrr7psWb/IMG-20250411-124617-491.jpg",
+    "https://i.ibb.co/bj9v73JS/IMG-20250411-124633-497.jpg",
+    "https://i.ibb.co/h1nj5Hyd/IMG-20250411-124644-073.jpg",
+    "https://i.ibb.co/67JChx68/IMG-20250411-124649-706.jpg",
+    "https://i.ibb.co/yc6PJt3z/IMG-20250411-124654-322.jpg",
+    "https://i.ibb.co/ks7Jh7jz/IMG-20250411-124658-596.jpg",
+    "https://i.ibb.co/FLXXjwFc/IMG-20250411-124702-194.jpg",
+    "https://i.ibb.co/DPw44rXD/IMG-20250411-124710-456.jpg",
+    "https://i.ibb.co/pvwZY9Tw/IMG-20250411-124717-700.jpg",
+    "https://i.ibb.co/8LBBQ9q8/IMG-20250411-124722-649.jpg",
+    "https://i.ibb.co/rKbh9YXy/IMG-20250411-124726-319.jpg",
+    "https://i.ibb.co/LDMGhcvS/IMG-20250411-124739-006.jpg",
+    "https://i.ibb.co/hRg4Vv2F/IMG-20250411-124753-057.jpg",
+    "https://i.ibb.co/r2mFQn4n/IMG-20250411-124756-483.jpg",
+    "https://i.ibb.co/VY7js3yz/IMG-20250411-125632-718.jpg",
+    "https://i.ibb.co/zWxBtgFt/IMG-20250411-125637-024.jpg",
+    "https://i.ibb.co/Pzwn1kbS/IMG-20250411-125640-439.jpg",
+    "https://i.ibb.co/Ps2T00D1/IMG-20250411-125725-177.jpg",
+    "https://i.ibb.co/YBS8y8bL/IMG-20250411-125729-949.jpg",
+    "https://i.ibb.co/NRsWK4B/IMG-20250411-125741-113.jpg",
+    "https://i.ibb.co/yn2p3HyG/IMG-20250411-125744-184.jpg",
+    "https://i.ibb.co/n8PtgGjV/IMG-20250411-125754-702.jpg",
+    "https://i.ibb.co/nNhjLd9s/IMG-20250411-125801-099.jpg",
+    "https://i.ibb.co/XxKJDzJS/IMG-20250411-125815-829.jpg",
+    "https://i.ibb.co/SwLJZBDj/IMG-20250411-125823-235.jpg",
+    "https://i.ibb.co/yndPHBNC/IMG-20250411-125826-345.jpg",
+    "https://i.ibb.co/TxC4V0CD/IMG-20250411-125844-807.jpg",
+    "https://i.ibb.co/Rk074wny/IMG-20250411-125858-873.jpg",
+    "https://i.ibb.co/B2b0yfwW/IMG-20250411-125901-589.jpg",
+    "https://i.ibb.co/C5smTsZd/IMG-20250411-125919-579.jpg",
+    "https://i.ibb.co/tpkmMfGw/IMG-20250411-130536-966.jpg",
     # Add more image URLs as needed
 ]
     
@@ -775,7 +798,7 @@ async def upload(bot: Client, m: Message):
     thumb = input6.text
     if thumb.startswith("http://") or thumb.startswith("https://"):
         getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
-        thumb = "thumb.jpg"
+        thumb = "[THUMBNAIL](https://i.ibb.co/C5smTsZd/IMG-20250411-125919-579.jpg)"
     else:
         thumb == "no"
     failed_count =0
